@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.kursovai_final3.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home">
+    <action
+        android:id="@+id/action_homeFragment_to_SobytiaFragment"
+        app:destination="@id/navigation_home"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.kursovai_final3.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.kursovai_final3.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/resultatFragment"
+        android:name="com.example.kursovai_final3.ui.resultat.ResultatFragment"
+        tools:layout="@layout/fragment_resultat">
+        <action
+            android:id="@+id/action_resultatFragment_to_homeFragment"
+            app:destination="@id/navigation_home"/>
+        <action
+            android:id="@+id/action_resultatFragment_to_descFragment"
+            app:destination="@id/descFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/IgrokFragment"
+        android:name="com.example.kursovai_final3.ui.igroki.IgrokiFragment"
+        tools:layout="@layout/fragment_igroki">
+        <action
+            android:id="@+id/action_resultatFragment_to_homeFragment"
+            app:destination="@id/navigation_home"/>
+        <action
+            android:id="@+id/action_IgrokFragment_to_DescIgrokFragment"
+            app:destination="@id/DescIgrokFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/descFragment"
+        android:name="com.example.kursovai_final3.ui.description.DescFragment"
+        tools:layout="@layout/fragment_description">
+        <action
+            android:id="@+id/action_descFragment_to_resultatFragment"
+            app:destination="@id/resultatFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/DescIgrokFragment"
+        android:name="com.example.kursovai_final3.ui.igroki.DescIgrokFragment"
+        tools:layout="@layout/fragment_description">
+        <action
+            android:id="@+id/action_DescIgrokFragment_to_IgrokFragment"
+            app:destination="@id/IgrokFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/MatchFragment"
+        android:name="com.example.kursovai_final3.ui.match.MatchFragment"
+        tools:layout="@layout/fragment_matchi">
+        <action
+            android:id="@+id/action_MatchFragment_to_DescMatchFragment"
+            app:destination="@id/DescMatchFragment"/>
+        <action
+            android:id="@+id/action_MatchFragment_to_homeFragment"
+            app:destination="@id/navigation_home"/>
+
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/DescMatchFragment"
+        android:name="com.example.kursovai_final3.ui.match.DescMatchFragment"
+        tools:layout="@layout/fragment_descmatch">
+        <action
+            android:id="@+id/action_DescMatchFragment_to_MatchFragment"
+            app:destination="@id/MatchFragment"/>
+        <action
+            android:id="@+id/action_DescMatchFragment_to_PaymentFragment"
+            app:destination="@id/PaymentFragment"/>
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/PaymentFragment"
+        android:name="com.example.kursovai_final3.ui.payment.PaymentFragment"
+        tools:layout="@layout/fragment_payment">
+        <action
+            android:id="@+id/action_PaymentFragment_to_MatchFragment"
+            app:destination="@id/MatchFragment"/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/AddSobytieFragmnet"
+        android:name="com.example.kursovai_final3.ui.sobytia.AddSobytieFragment"
+        tools:layout="@layout/fragment_addsobytie">
+        <action
+            android:id="@+id/action_AddSobytieFragmnet_to_AdminFragment"
+            app:destination="@id/AdminFragment"/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/SobytiaFragment"
+        android:name="com.example.kursovai_final3.ui.sobytia.EventsFragment"
+        tools:layout="@layout/fragment_events">
+        <action
+            android:id="@+id/action_SobytiaFragment_to_AdminFragment"
+            app:destination="@id/AdminFragment"/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/DescSobytie"
+        android:name="com.example.kursovai_final3.ui.sobytia.SobytiaDescFragment"
+        tools:layout="@layout/fragment_sobytiadesc">
+        <action
+            android:id="@+id/action_DescSobytie_to_SobytiaFragment"
+            app:destination="@id/SobytiaFragment"/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/Sob"
+        android:name="com.example.kursovai_final3.ui.sobytia.EventsVseFragment"
+        tools:layout="@layout/fragment_eventsvse">
+        <action
+            android:id="@+id/action_Sob_to_HomeFragment"
+            app:destination="@id/navigation_home"/>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/AdminFragment"
+        android:name="com.example.kursovai_final3.ui.sobytia.AdminFragment"
+        tools:layout="@layout/fragment_admin" />
+</navigation>

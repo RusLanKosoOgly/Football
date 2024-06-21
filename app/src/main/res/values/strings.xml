@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">kursovai_final3</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="team_left_logo">Логотип левой команды</string>
+    <string name="team_right_logo">Логотип правой команды</string>
+    <string name="indicator_1">Indicator 1</string>
+    <string name="indicator_2">Indicator 2</string>
+    <string name="indicator_3">Indicator 3</string>
+    <string name="indicator_4">Indicator 4</string>
+</resources>

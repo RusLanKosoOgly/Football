@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="22dp"
+    android:gravity="center"
+    tools:context=".ui.sobytia.AdminFragment"
+    android:background="#3BEC8A">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="События"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/button_add_event"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Добавить событие"
+        android:background="@color/black"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/button_delete_event"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Удалить событие"
+        android:background="#EA2222"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/button_back_event"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Назад"
+        android:background="#EA2222"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_gravity="center" />
+
+</LinearLayout>

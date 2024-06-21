@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "946432425735",
+    "project_id": "kursovai-b6c5a",
+    "storage_bucket": "kursovai-b6c5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:946432425735:android:cbc184aa466a11d0050fa2",
+        "android_client_info": {
+          "package_name": "com.example.kursovai_final3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1tnlVkLJ5sEmmDwEso3NwgOB99CRZbuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
